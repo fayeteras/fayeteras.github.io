@@ -16,7 +16,7 @@
     }
 
     p {
-        color: rgb(85, 85, 85);
+        color: rgb(126, 148, 126);
     }
 
 /* TRANSITION */
@@ -142,4 +142,110 @@
         transform: none;
     }
 
-    /* SECTIONS */
+/* SECTIONS */
+    
+    section {
+        padding-top: 4vh;
+        height: 96vh;
+        margin: 0 10rem;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
+
+    .section-contatiner {
+        display: flex;
+    }
+
+/* PROFILE */
+
+    #profile {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 50vh;
+    }
+
+    .section__pic-container {
+        display: flex;
+        height: 500px;
+        width: 500px;
+        margin: auto, 0;
+    }
+
+    .section__text {
+        align-self: center;
+        text-align: center;
+    }
+
+    .section__text p {
+        font-weight: 600;
+    }
+
+    .section__text__p2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .section__text__p1 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .title {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #socials-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 5rem;
+    }
+
+    /* ICONS */
+
+    .icon {
+        cursor: pointer;
+        height: 2rem;
+        transition: all 300ms ease;
+    }
+
+    .icon:hover {
+        filter:opacity(50%);
+    }
+
+    /* BUTTONS */
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .btn {
+        font-weight: 600;
+        font-size: 105%;
+        transition: all 300ms ease;
+        padding: .6rem;
+        width: 9rem;
+        border-radius: 2rem;
+    }
+
+    .btn-color-1, .btn-color-2 {
+        border: rgb(126, 148, 126) 0.2rem solid;
+        color: rgb(126, 148, 126);
+        background:none
+    }
+
+    .btn-color-2:hover, .btn-color-1:hover {
+        background-color: rgb(126, 148, 126);
+        border: none;
+        cursor: pointer;
+        color: white;
+    }
+
+    .btn-container {
+        gap: 1rem;
+    }
