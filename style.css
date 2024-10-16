@@ -1,4 +1,4 @@
-/* GENERAL */
+/* GENERAL                      #region*/
 
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
@@ -31,9 +31,11 @@
         font-size: 2rem;
     }
 
-    p:hover, h1:hover, h2:hover, h3:hover, h4:hover {
+     h1:hover, h2:hover, h3:hover, h4:hover {
         cursor: default;
     }
+    /* #endregion */
+
 
 /* TRANSITION */
 
@@ -41,8 +43,7 @@
         transition: all 300ms ease;
     }
 
-/* DESKTOP NAV */
-
+/* DESKTOP NAV                  #region*/
     nav,
     .nav-links {
         display: flex;
@@ -80,10 +81,11 @@
     .logo:hover {
         cursor: default;
     }
-    
+    /* #endregion */
 
-/* HAMBURGER MENU */
 
+
+    /* HAMBURGER MENU               #region*/
     #hamburger-nav {
         display: none;
     }
@@ -157,8 +159,9 @@
     .hamburger-icon span:first-child {
         transform: none;
     }
+    /* #endregion */
 
-/* SECTIONS */
+/* SECTIONS                     #region*/
     
     section {
         padding-top: 3vh;
@@ -172,6 +175,7 @@
     .section-contatiner {
         display: flex;
     }
+    /* #endregion */
 
 /* PROFILE */
 
@@ -194,18 +198,19 @@
         text-align: center;
     }
 
-    .section__text p {
-        font-weight: 600;
-    }
-
-    .section__text__p2 {
-        text-align: center;
-        font-size: 2rem;
+    emph {
+        color: rgb(126, 148, 126);
     }
 
     .section__text__p1 {
         text-align: center;
         font-size: 1.5rem;
+    }
+
+    .section__text__description {
+        font-weight: 0;
+        font-size: medium;
+        margin-top: 1rem;
     }
 
     .title {
@@ -217,8 +222,9 @@
         display: flex;
         justify-content: center;
         margin-top: 1rem;
-        gap: 1rem;
+        gap: 1.5rem;
     }
+    /* #endregion */
 
 /* ICONS */
 
@@ -238,7 +244,7 @@
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 
     .btn {
