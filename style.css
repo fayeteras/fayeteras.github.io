@@ -81,11 +81,11 @@
     .logo:hover {
         cursor: default;
     }
-    /* #endregion */
+/* #endregion */
 
 
 
-    /* HAMBURGER MENU               #region*/
+/* HAMBURGER MENU               #region*/
     #hamburger-nav {
         display: none;
     }
@@ -159,15 +159,15 @@
     .hamburger-icon span:first-child {
         transform: none;
     }
-    /* #endregion */
+/* #endregion */
 
 /* SECTIONS                     #region*/
     
     section {
-        padding-top: 3vh;
-        padding-bottom: 7vh;
-        height: 96vh;
-        margin: 3rem 8rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        height: 96rem;
+        margin: 8rem 8rem;
         box-sizing: border-box;
         min-height: fit-content;
     }
@@ -183,7 +183,8 @@
         display: flex;
         justify-content: center;
         gap: 5rem;
-        height: 50vh;
+        height: 40vh;
+        margin: 4rem 8rem;
     }
 
     .section__pic-container {
@@ -279,11 +280,8 @@
         position: relative;
         height: 45rem;
         padding-top: 5rem;
-    }
-
-    .about-containers {
-        gap: 2rem;
-        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-details-container {
@@ -293,6 +291,7 @@
 
     .about-containers, .about-details-container {
         display: flex;
+        gap: 2rem;
     }
 
     .about-pic {
@@ -355,7 +354,8 @@
     .experience-details-container {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 2rem;
     }
 
     .details-containers {
@@ -391,3 +391,43 @@
     article .graphic {
         height: 2rem;
     }
+
+/* PROJECTS #region */
+    #projects {
+        position: relative;
+    }
+
+    .color-container {
+        background-color: rgb(255, 255, 255);
+        height: 23rem;
+        min-width: 10rem;
+    }
+
+    .project-title {
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .project-img {
+        border-radius: 2rem;
+        width: 95%;
+        margin-bottom: 1rem;
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .project-btn {
+        width: 40%;
+        height: 3rem;
+        font-size: medium;
+        min-width: 4rem;
+    }
+
+
+
+/* #endregion */
