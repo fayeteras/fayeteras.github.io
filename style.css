@@ -31,6 +31,10 @@
         font-size: 2rem;
     }
 
+    p:hover, h1:hover, h2:hover, h3:hover, h4:hover {
+        cursor: default;
+    }
+
 /* TRANSITION */
 
     a, .btn{
@@ -157,7 +161,7 @@
 /* SECTIONS */
     
     section {
-        padding-top: 6vh;
+        padding-top: 3vh;
         padding-bottom: 7vh;
         height: 96vh;
         margin: 3rem 8rem;
@@ -216,7 +220,7 @@
         gap: 1rem;
     }
 
-    /* ICONS */
+/* ICONS */
 
     .icon {
         cursor: pointer;
@@ -228,7 +232,7 @@
         filter:opacity(50%);
     }
 
-    /* BUTTONS */
+/* BUTTONS */
 
     .btn-container {
         display: flex;
@@ -268,6 +272,7 @@
     #about {
         position: relative;
         height: 45rem;
+        padding-top: 5rem;
     }
 
     .about-containers {
@@ -306,7 +311,7 @@
         font-size: 90%;
     }
 
-    #about .icon {
+    #about .graphic {
         height: 2.5rem;
     }
 
@@ -328,54 +333,55 @@
     }
 
 /* EXPERIENCE */
- #experience {
-    position: relative;
-    height: 30rem;
- }
+    #experience {
+        position: relative;
+        height: 30rem;
+        padding-top: 5rem;
+    }
 
- .experience-sub-title {
-    color: rgb(126, 148, 126);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
- }
+    .experience-sub-title {
+        color: rgb(126, 148, 126);
+        font-weight: 600;
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+    }
 
- .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+    .experience-details-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.details-containers {
-    padding: 1.5rem;
-    padding-bottom: 3rem;
-    margin: 4rem 0;
-    flex: 1;
-    text-align: center;
-    border: rgb(126, 148, 126) .1rem solid;
-    border-radius: 2rem;
-}
+    .details-containers {
+        padding: 1.5rem;
+        padding-bottom: 3rem;
+        margin: 4rem 0;
+        flex: 1;
+        text-align: center;
+        border: rgb(126, 148, 126) .1rem solid;
+        border-radius: 2rem;
+    }
 
-.article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-}
+    .article-container {
+        display: flex;
+        text-align: initial;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 2.5rem;
+        justify-content: space-around;
+    }
 
-article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-}
+    article {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
 
-article h3 {
-    font-size: medium;
-}
+    article h3 {
+        font-size: medium;
+    }
 
-article.icon {
-    cursor: default;
-}
+    article .graphic {
+        height: 2rem;
+    }
