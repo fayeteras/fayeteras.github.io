@@ -433,7 +433,7 @@
         letter-spacing: 10px;
     }
 
-    .p1-section {
+    .p1 {
         padding: 0;
         margin: 3rem 8rem;
     }
@@ -458,7 +458,8 @@
     }
 
     .project-details {
-        width: 45%;
+        width: 100%;
+        max-width: 500px;
     }
 
     .project-details h2 {
@@ -468,7 +469,13 @@
     }
 
     .project-image {
+        flex: 1 1 100px;
         border-radius: 2rem;
-        width: 45%;
+        max-width: 450px;
+        height: max-content;
         margin-top: 1rem;
+    }
+
+    .p1 .btn {
+        margin-top: 2rem;
     }
