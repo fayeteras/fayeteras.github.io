@@ -428,14 +428,14 @@
 
 /* Projects */
     .page-title {
-        font-size: 600%;
+        font-size: 500%;
         color: rgb(126, 148, 126);
         letter-spacing: 10px;
     }
 
     .p1 {
         padding: 0;
-        margin: 3rem 8rem;
+        margin: 2rem 8rem;
     }
 
     .page-header {
@@ -448,34 +448,35 @@
     .p1-container {
         display: flex;
         flex-wrap: wrap;
+        overflow: hidden;
         justify-content: space-around;
         flex-direction: row;
         gap: 1rem;
-        padding: 3rem;
-        padding-bottom: 3rem;
+        padding: 2rem;
         border: rgb(126, 148, 126) .1rem solid;
         border-radius: 2rem;
     }
 
-    .project-details {
+    .project-content-container {
         width: 100%;
-        max-width: 500px;
+        max-width: 450px;
+        text-align: left;
     }
 
-    .project-details h2 {
+    .p1 h2 {
         font-size: 300%;
-        margin-bottom: 1rem;
         color: rgb(126, 148, 126);
     }
 
     .project-image {
-        flex: 1 1 100px;
-        border-radius: 2rem;
-        max-width: 450px;
-        height: max-content;
-        margin-top: 1rem;
+        width: 100%;
+        border-radius: 1rem;
     }
 
     .p1 .btn {
-        margin-top: 2rem;
+        margin-top: 1rem;
+    }
+
+    .p1 p {
+        padding-top: 1rem;
     }
