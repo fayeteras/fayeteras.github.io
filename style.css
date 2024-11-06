@@ -72,6 +72,7 @@
         text-decoration: underline;
         text-underline-offset: 0.5rem;
         text-decoration-color: rgb(126, 148, 126);
+        cursor: pointer;
     }
 
     .logo {
@@ -427,22 +428,41 @@
 /* #endregion */
 
 /* Projects */
+    .page-header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        padding: 2rem 5rem 15rem 5rem;
+        margin: 0;
+        width: 80;
+    }
+    
     .page-title {
-        font-size: 500%;
+        font-size: 700%;
+        width: 100%;
         color: rgb(126, 148, 126);
-        letter-spacing: 10px;
+        letter-spacing: 20px;
+    }
+
+    .projects-summary {
+        padding: 2rem 0;
+        width: 75%;
+    }
+
+    .design-types {
+        display: flex;
+        column-gap: 6rem;
+        padding: 3rem 0;
+    }
+
+    .page-header a {
+        font-size: 150%;
+        font-weight: lighter;
     }
 
     .p1 {
         padding: 0;
         margin: 2rem 8rem;
-    }
-
-    .page-header {
-        height: 10rem;
-        padding: 0 9rem;
-        margin: 0;
-        text-align: center;
     }
 
     .p1-container {
