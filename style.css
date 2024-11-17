@@ -399,7 +399,7 @@
 
     .color-container {
         background-color: rgb(255, 255, 255);
-        height: 23rem;
+        height: fit-content;
         min-width: 10rem;
     }
 
@@ -506,9 +506,15 @@
 
 /* Responsive Layout */
 @media only screen and (max-width: 768px) {
-section {
-    margin: 1rem;
-}
+    section {
+        margin: 1rem;
+        padding-top: 2rem;
+    }
+
+    .section__text__description {
+        font-size: 75%;
+    }
+    
     .arrow {
         right: 0;
         bottom: 4rem;
@@ -589,13 +595,14 @@ section {
 
     /* About section layout */
     #about {
-        padding: 2rem;
+        padding: 1rem;
         align-items: center;
     }
 
     #about .about-containers {
         flex-direction: row;
         align-items: center;
+        padding: 0;
     }
 
     #about .section__pic-container {
@@ -643,16 +650,26 @@ section {
         flex: none;
         width: 90%; /* Ensure the details take up full width on mobile */
         margin: 0 0 1.5rem 0;
+        padding: 1rem;
     }
 
     .article-container {
         gap: 1rem;
+        justify-content: space-evenly;
     }
 
     article {
         justify-content: flex-start;
+        width: 9rem;
     }
 
+    article h3 {
+        font-size: 90%;
+    }
+
+    .graphic {
+        scale: 75%;
+    }
 
     /* Projects section adjustments */
     #projects {
