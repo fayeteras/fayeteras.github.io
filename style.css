@@ -660,11 +660,15 @@
 
     article {
         justify-content: flex-start;
-        width: 9rem;
+        width: 8rem;
     }
 
     article h3 {
-        font-size: 90%;
+        font-size: 110%;
+    }
+
+    article {
+        font-size: 80%;
     }
 
     .graphic {
@@ -706,4 +710,47 @@
     .p1 .btn {
         width: 100%; /* Make buttons full width */
     }
+
+    /* PROJECTS */
+        .page-header {
+            padding: 2rem;
+        }
+
+        .page-title {
+            font-size: 450%;
+        }
+
+        .projects-summary {
+            display: none;
+        }
+
+        .design-types {
+            width: 100%;
+            font-size: 90%;
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        .p1 {
+            margin: 1rem;
+        }
+
+        .p1-container {
+            padding: 1.5rem;
+            text-align: left;
+        }
+
+        .p1 h2 {
+            font-size: 200%;
+        }
+
+        .p1 p {
+            font-size: 90%;
+        }
+
+        .p1 .btn {
+            width: 50%;
+            font-size: 90%;
+        }
 }
+
