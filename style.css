@@ -44,6 +44,15 @@
     }
 
 /* DESKTOP NAV                  #region*/
+    #desktop-nav {
+        position: sticky;
+        z-index: 2;
+        top: 0;
+        padding: 10px 10px;
+        background: #ffffff;
+        filter: drop-shadow(rgb(40, 43, 43, 0.1) 0.25rem 0.25rem 10px);
+    }    
+
     nav,
     .nav-links {
         display: flex;
@@ -52,7 +61,7 @@
     nav {
         justify-content: space-around;
         align-items: center;
-        height: 17vh;
+        height: 4rem;
     }
 
     .nav-links {
@@ -432,7 +441,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: left;
-        padding: 2rem 5rem 15rem 5rem;
+        padding: 5rem 10rem 10rem 10rem;
         margin: 0;
         width: 80;
     }
@@ -462,7 +471,7 @@
 
     .p1 {
         padding: 0;
-        margin: 2rem 8rem;
+        margin: 2rem 5rem;
     }
 
     .p1-container {
