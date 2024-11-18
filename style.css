@@ -423,6 +423,10 @@
         margin-bottom: 1rem;
     }
 
+    #projects .details-containers {
+        padding: 1rem;
+    }
+
     .button-container {
         display: flex;
         flex-direction: row;
@@ -469,12 +473,12 @@
         font-weight: lighter;
     }
 
-    .p1 {
+    .p {
         padding: 0;
         margin: 2rem 5rem;
     }
 
-    .p1-container {
+    .p-container {
         display: flex;
         flex-wrap: wrap;
         overflow: hidden;
@@ -492,7 +496,7 @@
         text-align: left;
     }
 
-    .p1 h2 {
+    .p h2 {
         font-size: 300%;
         color: rgb(126, 148, 126);
     }
@@ -502,12 +506,12 @@
         border-radius: 1rem;
     }
 
-    .p1 .btn {
+    .p .btn {
         margin-top: 1rem;
     }
 
-    .p1 p {
-        padding-top: 1rem;
+    .p p {
+        padding: 1rem 0;
     }
 
 
