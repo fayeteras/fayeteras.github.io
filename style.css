@@ -475,7 +475,7 @@
 
     .p {
         padding: 0;
-        margin: 2rem 5rem;
+        margin: 5rem;
     }
 
     .p-container {
@@ -513,6 +513,55 @@
     .p p {
         padding: 1rem 0;
     }
+
+    .p3 .p-container
+    {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+        grid-auto-rows: auto; /* Automatically adjusts row height based on content */
+        gap: 1rem;
+        padding: 2rem;
+        border: rgb(126, 148, 126) 0.1rem solid;
+        border-radius: 2rem;
+        place-items: center; /* Centers content within grid cells */
+        justify-content: center;
+        grid-template-areas:
+            "container-1 container-1 container-1 container-2 container-2 container-2"
+            "container-3 container-3 container-4 container-4 container-5 container-5";
+    }
+    
+    /* Assign areas for containers */
+    .container-1 {
+        grid-area: container-1;
+    }
+
+    .container-2 {
+        grid-area: container-2;
+    }
+    .p3 .container-3 {
+        grid-area: container-3;
+    }
+    .p3 .container-4 {
+        grid-area: container-4;
+    }
+    .p3 .container-5 {
+        grid-area: container-5;
+    }
+
+
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 1000px) {
+        .p3 .p-container,
+        .p4 .p-container {
+            grid-template-columns: repeat(4, 1fr); /* Adjust to fewer columns */
+            grid-template-areas:
+                "container-1 container-1 container-1 container-1"
+                "container-2 container-2 container-3 container-3"
+                "container-4 container-4 container-5 container-5";
+        }
+    }
+    
+
 
 
     
@@ -744,8 +793,8 @@
             gap: 4rem;
         }
 
-        .p1 {
-            margin: 1rem;
+        .p {
+            margin: 2rem;
         }
 
         .p1-container {
