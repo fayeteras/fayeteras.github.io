@@ -402,42 +402,72 @@
     }
 
 /* PROJECTS #region */
-    #projects {
-        position: relative;
+#projects {
+    position: relative;
+}
+
+#projects .experience-details-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* Adds space between items */
+    justify-content: center; /* Centers the items within the container */
+}
+
+.color-container {
+    background-color: rgb(255, 255, 255);
+    height: 100%; /* Ensure each container stretches to full height */
+    flex: 1 1 20rem; /* Allow the items to grow or shrink, but maintain a minimum size */
+    max-width: 25rem; /* Limit the maximum width of each container */
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem; /* Adds some spacing around each item */
+}
+
+.project-title {
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 95%;
+    margin-bottom: 1rem;
+    flex-grow: 1; /* Ensures the image takes as much space as available */
+}
+
+#projects .details-containers {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-btn {
+    height: 2.5rem;
+    font-size: medium;
+    min-width: 6rem;
+}
+
+/* Make sure the project sections are the same size, even when the screen is smaller */
+@media (max-width: 768px) {
+    #projects .experience-details-container {
+        flex-direction: column;
     }
 
     .color-container {
-        background-color: rgb(255, 255, 255);
-        height: fit-content;
-        min-width: 10rem;
+        width: 100%;
+        height: auto; /* Adjust height as needed for smaller screens */
+        max-width: none; /* Allow the containers to take full width on small screens */
     }
+}
 
-    .project-title {
-        color: black;
-        margin-bottom: 1rem;
-    }
-
-    .project-img {
-        border-radius: 2rem;
-        width: 95%;
-        margin-bottom: 1rem;
-    }
-
-    #projects .details-containers {
-        padding: 1rem;
-    }
-
-    .button-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .project-btn {
-        height: 2.5rem;
-        font-size: medium;
-        min-width: 6rem;
-    }
 /* #endregion */
 
 /* Projects */
@@ -742,6 +772,7 @@
         padding: 2rem 0;
     }
 
+
     .project-title {
         font-size: 1.5rem;
     }
@@ -756,7 +787,8 @@
     }
 
     #projects .details-containers {
-        height: fit-content;    }
+        height: fit-content;
+        }
 
     .page-header {
         flex-direction: row;
