@@ -410,20 +410,20 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem; /* Adds space between items */
+    gap: 3rem; /* Adds space between items */
     justify-content: center; /* Centers the items within the container */
 }
 
 .color-container {
     background-color: rgb(255, 255, 255);
-    height: 100%; /* Ensure each container stretches to full height */
-    flex: 1 1 20rem; /* Allow the items to grow or shrink, but maintain a minimum size */
-    max-width: 25rem; /* Limit the maximum width of each container */
     display: flex;
     flex-direction: column;
-    margin: 0.5rem; /* Adds some spacing around each item */
+    height: 100%;
+    margin: 0.5rem;
+    box-sizing: border-box;
 }
 
+/* Project title and image styles */
 .project-title {
     color: black;
     margin-bottom: 1rem;
@@ -431,9 +431,10 @@
 
 .project-img {
     border-radius: 2rem;
-    width: 95%;
+    width: 100%; /* Ensure images fit the container */
+    
+    height: auto; /* Maintain aspect ratio */
     margin-bottom: 1rem;
-    flex-grow: 1; /* Ensures the image takes as much space as available */
 }
 
 #projects .details-containers {
@@ -445,7 +446,6 @@
 
 .button-container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
@@ -455,18 +455,27 @@
     min-width: 6rem;
 }
 
-/* Make sure the project sections are the same size, even when the screen is smaller */
-@media (max-width: 768px) {
-    #projects .experience-details-container {
-        flex-direction: column;
-    }
+/* Media queries for different screen sizes */
 
-    .color-container {
-        width: 100%;
-        height: auto; /* Adjust height as needed for smaller screens */
-        max-width: none; /* Allow the containers to take full width on small screens */
+/* Default: 1 item per row */
+#projects .experience-details-container .color-container {
+    flex-basis: 100%; /* Full width for small screens */
+}
+
+/* Medium screens: 2 items per row */
+@media (min-width: 600px) {
+    #projects .experience-details-container .color-container {
+        flex-basis: calc(50% - 3rem); /* Adjust for gap */
     }
 }
+
+/* Large screens: 4 items per row */
+@media (min-width: 900px) {
+    #projects .experience-details-container .color-container {
+        flex-basis: calc(25% - 3rem); /* Adjust for gap */
+    }
+}
+
 
 /* #endregion */
 
