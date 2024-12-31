@@ -472,7 +472,7 @@
 /* Large screens: 4 items per row */
 @media (min-width: 900px) {
     #projects .experience-details-container .color-container {
-        flex-basis: calc(25% - 3rem); /* Adjust for gap */
+        flex-basis: calc(20% - 3rem); /* Adjust for gap */
     }
 }
 
