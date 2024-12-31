@@ -410,17 +410,17 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem; /* Adds space between items */
-    justify-content: center; /* Centers the items within the container */
+    gap: 1rem; /* Adds space between items */
+    justify-content:center; /* Centers the items within the container */
 }
 
 .color-container {
+    width: fit-content;
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     margin: 0.5rem;
-    box-sizing: border-box;
 }
 
 /* Project title and image styles */
@@ -432,16 +432,16 @@
 .project-img {
     border-radius: 2rem;
     width: 100%; /* Ensure images fit the container */
-    
+    min-width: 15rem;
+    max-width: 25rem;
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 1rem;
 }
 
 #projects .details-containers {
     padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex: 1;
 }
 
 .button-container {
@@ -456,25 +456,15 @@
 }
 
 /* Media queries for different screen sizes */
-
-/* Default: 1 item per row */
-#projects .experience-details-container .color-container {
-    flex-basis: 100%; /* Full width for small screens */
-}
-
-/* Medium screens: 2 items per row */
-@media (min-width: 600px) {
-    #projects .experience-details-container .color-container {
-        flex-basis: calc(50% - 3rem); /* Adjust for gap */
-    }
-}
-
-/* Large screens: 4 items per row */
 @media (min-width: 900px) {
-    #projects .experience-details-container .color-container {
-        flex-basis: calc(20% - 3rem); /* Adjust for gap */
+    .color-container {
+        height: 22rem;
+    }
+    #projects .details-containers {
+        flex: 0;
     }
 }
+
 
 
 /* #endregion */
